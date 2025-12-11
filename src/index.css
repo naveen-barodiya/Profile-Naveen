@@ -6,3 +6,28 @@
 body{
   font-family: 'poppins',sans-serif;
 }
+
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background: #16a34a;
+  /* Tailwind green-600 */
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.active::after {
+  width: 100%;
+}

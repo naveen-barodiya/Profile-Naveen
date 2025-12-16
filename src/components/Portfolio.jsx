@@ -26,10 +26,10 @@ const Portfolio = () => {
         },
         {
             id: 4,
-            name: "Admin Panel Dashboard",
-            desc: "A fully responsive admin dashboard UI with charts.",
-            live: "http://adminpannel-dashboard.vercel.app",
-            image: "admin.png"
+            name: "Ecommerce Store",
+            desc: "A fully responsive Ecoomerce site to purches Products.",
+            live: "http://shop-ease-xi-ten.vercel.app",
+            image: "ecom.avif"
         }
     ];
 
@@ -45,8 +45,8 @@ const Portfolio = () => {
                     sm:grid-cols-2 
                     lg:grid-cols-3 
                     xl:grid-cols-4 
-                    gap-6 
-                    my-8">
+                     gap-6
+                    my-8 ">
 
                     {cardItems.map(({ id, name, desc, live, image }) => (
                         <div
